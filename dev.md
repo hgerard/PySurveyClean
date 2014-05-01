@@ -94,6 +94,9 @@ The same functions will be made available for a more complete data cleaning syst
 
 In terms of this more complete cleaning system, for reasons outlined above, it seems that the use of the system of functions offered by PySurveyClean should be programmed by someone with sufficient expertise to undertake this task in an IPython environment. Once programmed these functions can then be passed to a constructor that will generate output as discussed immediately above.
 
+For writing the Excel file, the following library is very useful: https://xlsxwriter.readthedocs.org/tutorial01.html
+
+
 For the present purposes it is suggested that the tasks that both of these functions are written for the common cleaning tasks already identified. Once working for those tasks, the module can be extended to more complex tasks. 
 
 ---
