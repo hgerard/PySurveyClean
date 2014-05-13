@@ -57,6 +57,7 @@ One thing that the development team might consider is putting feelers out to IPA
 + Checking the values of categorical variables
 + Checking skip patterns
 + Splitting and renaming 'tick all that apply' answer fields.
+
 ---
 
 ###Extent of the PySurveyClean System
@@ -74,12 +75,12 @@ PySurveyClean will not therefore offer users functions that are already availabl
 
 One consequence of this is that users will have to a clear idea of how the data that they have imported and plan to clean with PySurveyClean have been imported. In particular, this will mean that an understanding of the type of data being worked with will be necessary. This may cause major headaches for the development team, as pandas objects are capable of storing multiple different types of data in the same 'column'. As such making the functions of PySurveyClean generalisable to all types of possible data could be problematic. There are solutions such as automatic conversion of all data to strings, and/or checking data types before executing functions that can be explored as a more solid idea of the architecture of the module is generated. 
 
-A slightly different approach to a self-contained system could be to produce a suite of small functions or scripts that perform a particular data cleaning task. These scripts could be used more in a case by case basis fashion by the end user, and in collaboration with other existing tools (such as stata). Most of these scripts would be written in python and/or Pandas, but would be designed to work in a flexible way from the command line (receiving std-in, manipulating the data, and sending the result to std-out). For example:
-1. A script to output to screen the number of unique rows for each field/column. 
-2. A script to print to screen the row with missing values, and how many.
-3. A script to take a random subsample of the data for testing.
-4. A script that takes two arguments, replacing all instances of the first argument with the second. 
- 
+A slightly different approach to a self-contained system could be to produce a suite of small functions or scripts that perform a particular data cleaning task. These scripts could be used more in a case by case basis fashion by the end user, and in collaboration with other existing tools (such as stata). Most of these scripts would be written in python and/or Pandas, but would be designed to work in a flexible way from the command line (receiving std-in, manipulating the data, and sending the result to std-out). Examples might include:
+
++ A script to output to screen the number of unique rows for each field/column. 
++ A script to print to screen the row with missing values, and how many.
++ A script to take a random subsample of the data for testing.
++ A script that takes two arguments, replacing all instances of the first argument with the second. 
 
 ---
 
